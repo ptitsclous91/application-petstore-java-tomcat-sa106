@@ -304,6 +304,7 @@
             </execution>
           </executions>
         </plugin>
+        <!--
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
@@ -315,6 +316,7 @@
             </systemPropertyVariables>
           </configuration>
         </plugin>
+        -->
       </plugins>
     </build>
     <dependencies>
