@@ -309,7 +309,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${version.maven.surefire.plugin}</version>
           <configuration>
-            <skipTests>false</skipTests>
+            <skipTests>true</skipTests>
             <systemPropertyVariables>
               <arquillian.launch>arquillian-wildfly-managed</arquillian.launch>
             </systemPropertyVariables>
