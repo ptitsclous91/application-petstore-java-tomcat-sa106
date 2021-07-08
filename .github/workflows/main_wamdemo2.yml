@@ -32,5 +32,5 @@ jobs:
         app-name: wamdemo2
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_77404F623E65485296759A871A5E3588 }}
-        package: ${{ github.workspace }}/target/*.jar
+        package: ${{ github.workspace }}/target/*.war
 
