@@ -10,6 +10,7 @@
   <name>Petstore application using Java EE 7</name>
 
   <properties>
+    <skipTests>true</skipTests>
     <version.javaee>7.0</version.javaee>
     <version.jboss-javaee>1.1.0.Final</version.jboss-javaee>
     <version.log4j>2.8.2</version.log4j>
@@ -257,6 +258,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>${version.maven.surefire.plugin}</version>
             <configuration>
+            <skipTests>${skipTests}</skipTests>
               <systemPropertyVariables>
                 <arquillian.launch>arquillian-wildfly-remote</arquillian.launch>
               </systemPropertyVariables>
@@ -304,19 +306,19 @@
             </execution>
           </executions>
         </plugin>
-        <!--
+        
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${version.maven.surefire.plugin}</version>
           <configuration>
-            <skipTests>true</skipTests>
+            <skipTests>${skipTests}</skipTests>
             <systemPropertyVariables>
               <arquillian.launch>arquillian-wildfly-managed</arquillian.launch>
             </systemPropertyVariables>
           </configuration>
         </plugin>
-        -->
+        
       </plugins>
     </build>
     <dependencies>
