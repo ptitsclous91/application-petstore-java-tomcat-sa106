@@ -193,7 +193,7 @@
   </dependencies>
 
   <build>
-    <finalName>applicationPetstore</finalName>
+    <finalName>ROOT</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
