@@ -30,7 +30,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: wamdemo
-        slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_77404F623E65485296759A871A5E3588 }}
+        slot-name: tst
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE__2f6d63b0a9734fd99830f7f26eeefc4f }}
         package: ${{ github.workspace }}/target/*.war
 
