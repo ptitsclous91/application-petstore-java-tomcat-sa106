@@ -31,6 +31,6 @@ jobs:
       with:
         app-name: webapidemo01
         slot-name: tst
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE__2f6d63b0a9734fd99830f7f26eeefc4f }}
+        publish-profile: ${{ secrets.WEBAPIDEMO01 }}
         package: ${{ github.workspace }}/target/*.war
 
