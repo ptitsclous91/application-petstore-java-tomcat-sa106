@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: webapidemo01
         slot-name: production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_77404F623E65485296759A871A5E3588 }}
+        publish-profile: ${{ secrets.PROD_WEBAPIDEMO01 }}
         package: ${{ github.workspace }}/target/*.war
