@@ -29,8 +29,8 @@ jobs:
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
       with:
-        app-name: webapidemo01
+        app-name: wamdemotomcat
         slot-name: tst
-        publish-profile: ${{ secrets.WEBAPIDEMO01 }}
+        publish-profile: ${{ secrets.TST_WAMDEMOTOMCAT }}
         package: ${{ github.workspace }}/target/*.war
 
